@@ -1,6 +1,18 @@
 {
-  "todos1": [],
-  "todos2": [],
-  "todos3": [],
+  "todos1": [
+    {
+      "text": "sup"
+    }
+  ],
+  "todos2": [
+    {
+      "text": "New todo item"
+    }
+  ],
+  "todos3": [
+    {
+      "text": "New todo items"
+    }
+  ],
   "id": "Ev8VFkQNARhUzZ"
 }
