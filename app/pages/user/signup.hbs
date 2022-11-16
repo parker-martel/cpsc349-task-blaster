@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Blaster - Signup</title>
+    </head>
+    <body>
+        {{!-- Text Section --}}
+        <main class="flex items-center justify-center h-screen bg-gray-100">
+            <form action="/user/signup" method="post">
+                <div class=" bg-white w-96 p-6 rounded shadow-sm">   
+                    <h1 class="text-4xl"><span class="text-blue-400 font-bold">Signup </span>For a Task Blaster Account</h1>        
+                    <div class="flex items-center justify-center mb-4">
+                        <img src="/assets/images/tasklogo.jpg" class="pt-8 hhh-32" alt="Task Logo 2"/>
+                    </div>        
+                    <label class="tex-gray-700">Username:</label>
+                    <input 
+                        class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4 rounded-md focus:ring-2 focus:ring-signupBlue focus:rounded-md"
+                        type="text" name="username" placeholder="username" required
+                    />
+                    <label class="tex-gray-700">Email:</label>
+                    <input 
+                        class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4 rounded-md focus:ring-2 focus:ring-signupBlue focus:rounded-md"
+                        type="email" name="email" placeholder="email" required
+                    />
+                    <label class="tex-gray-700">Password:</label>
+                    <input 
+                        class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4 rounded-md focus:ring-2 focus:ring-signupBlue focus:rounded-md"
+                        type="password" name="password" placeholder="password" required
+                    />                                  
+                    <button 
+                        type="submit"
+                        class="bg-blue-500 w-full text-gray-100 py-w rounded hover:bg-blue-600 transition-colors">Sign up
+                    </button>
+                    <p class="mt-4">
+                        Already have an account?
+                        <a href="/user/login" class="text-blue-500 hover:text-blue-700">Login</a>
+                    </p>
+                </div>  
+            </form>
+        </main>
+    </body>
+</html>

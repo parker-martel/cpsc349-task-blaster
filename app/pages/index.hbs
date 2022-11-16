@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task Blaster - Home</title>
+  </head>
+  {{!-- Add name somewhere on this page. I left it out for now since I dont know for sure what we're calling it --}}
+  <body>
+    {{!-- Text Section --}}
+    <main class="flex flex-col justify-center items-center space-y-16 pb-20 md:flex-row md:space-y-0 md:py-20 md:items-start relative space-x-20 mt-16 text-left bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg shadow-lg">
+      {{!-- White triangle on left side --}}
+      <div class="absolute -left-56 -bottom-44 p-40 bg-transparent">
+        <div class="w-0 h-0 xl:border-t-[320px] xl:border-t-transparent xl:border-l-[180px] xl:border-l-white xl:border-b-[320px] xl:border-b-transparent"></div>
+      </div>
+      {{!-- Left side --}}
+      <div class="flex flex-col items-start space-y-5 text-left">
+        <h1 class="text-4xl">Let's help you <span class="text-blue-400 font-bold">organize.</span></h1>
+        <p class="text-lg font-semibold pt-6">Modern tracking. Simply efficient.</p>
+        <ul class="list-disc pl-4 space-y-6 max-w-sm">
+          <li>Task Blaster allows you to easily keep track of all your daily tasks in one simple place.</li>
+          <li>Be your very best. Use Task Blaster and never go another day feeling unaccomplished again.</li>
+        </ul>
+        <p class="text-lg font-semibold">Easy to use.</p>
+        <ul class="list-disc pl-4 space-y-6 max-w-sm">
+          <li>Add and remove all your daily tasks in one place. And then click one button to add and remove items.</li>
+        </ul>
+        {{!-- Login & Signup Buttons --}}
+        {{#if currentUser}}
+        <div>
+          <a href="/{{currentUser.details.username}}" class="bg-black text-white text-sm justify-center py-2 px-6 shadow-xl rounded">
+            Go to your dashboard
+          </a>
+        </div>
+        {{else}}
+        <div class="space-x-12">
+          {{!-- Get Started Button --}}
+          <a href="/user/signup" class="bg-blue-400 text-white py-2 px-3 hover:bg-blue-300 transition-color duration-200 rounded-lg">
+            Get Started
+          </a>
+          <a href="/user/login" class="bg-loginBlue text-white text-md py-2 px-6 hover:bg-blue-500 transition-color duration-200 rounded-lg">
+            Login
+          </a>
+        </div>
+        {{/if}}
+      </div>
+      {{!-- Right side --}}
+      <div class="flex flex-col items-center space-y-5 text-left">
+        <span>
+        <h1 class="text-4xl">Not productive? We can fix that.</h1>
+        </span>
+        {{!-- Sample image --}}
+        <img src="assets/images/Sampleimage.png" class="h-96 shadow-lg rounded-b-md rounded-t-xl pt-2" alt="Task Blaster Logo" />
+      </div>
+    </main>
+  </body>
+</html> 
