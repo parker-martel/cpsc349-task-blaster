@@ -33,4 +33,8 @@ If you want to start from scratch, follow the instructions in /app/README.md
 # Full Remake Docs
 
 **IMPORTANT:** A NEW VERSION of this framework was just released. **Don't use the current docs**. For now, you can use this [thorough recipes page](https://recipes.remaketheweb.com/) to learn the new syntax.
+
 # cpsc349-project2
+#### To run, type 'npm i' & 'npm start' in the terminal!
+#### Uses HTML and CSS with the Tailwind CSS framework and Remake low-code backend tool. 
+
