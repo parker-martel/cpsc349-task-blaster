@@ -1,9 +1,6 @@
 {
   "todos1": [
     {
-      "text": "sup"
-    },
-    {
       "text": "mow lawn"
     },
     {
@@ -12,12 +9,21 @@
   ],
   "todos2": [
     {
-      "text": "New todo item"
+      "text": "complete lab assignment by 11:59"
+    },
+    {
+      "text": "work on project 2"
     }
   ],
   "todos3": [
     {
-      "text": "New todo items"
+      "text": "schedule haircut appointment"
+    },
+    {
+      "text": "lunch meeting at 11"
+    },
+    {
+      "text": "finish paperwork before work tomorrow"
     }
   ],
   "id": "Ev8VFkQNARhUzZ"
